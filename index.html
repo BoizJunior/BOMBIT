@@ -2,75 +2,61 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOMBIT - Mỹ Phẩm Cao Cấp</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <title>BOMBIT Plants - Cây Cảnh Cao Cấp</title>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- Top Bar -->
-    <div class="top-bar">
+    <header class="top-bar">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <span><i class="fas fa-phone"></i> Hotline: 1900 xxxx</span>
-            <span><i class="fas fa-envelope"></i> info@bombit.vn</span>
+        <div class="top-bar-content">
+          <div class="top-left">
+            <span><i class="fas fa-phone"></i> +84 123 456 789</span>
+            <span><i class="fas fa-envelope"></i> info@bombitplants.com</span>
           </div>
-          <div class="col-md-6 text-end">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+          <div class="top-right">
+            <a href="shopping-cart.html" class="cart-link">
+              <i class="fas fa-shopping-cart"></i>
+              Giỏ hàng (<span id="cart-count">0</span>)
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#home">BOMBIT</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Trang chủ</a>
+        <div class="navbar-content">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-leaf"></i> BOMBIT Plants
+          </a>
+          <ul class="nav-menu">
+            <li><a class="nav-link active" href="#home">Trang chủ</a></li>
+            <li><a class="nav-link" href="#about">Về chúng tôi</a></li>
+            <li>
+              <a class="nav-link" href="product-listing.html">Sản phẩm</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#products">Sản phẩm</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Về chúng tôi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Đánh giá</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Liên hệ</a>
-            </li>
+            <li><a class="nav-link" href="#features">Ưu điểm</a></li>
+            <li><a class="nav-link" href="#contact">Liên hệ</a></li>
           </ul>
-          <div class="ms-3">
-            <button class="btn btn-primary-custom">
-              <i class="fas fa-shopping-cart"></i> Giỏ hàng (0)
-            </button>
-          </div>
         </div>
       </div>
     </nav>
@@ -78,187 +64,102 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content">
-              <h1>
-                Khám phá vẻ đẹp <span class="highlight">tự nhiên</span> của bạn
-              </h1>
-              <p>
-                Công nghệ MSC-Exosome tiên tiến, dẫn đầu trong lĩnh vực chăm sóc
-                sắc đẹp và làm đẹp da tại châu Á.
-              </p>
-              <div class="hero-buttons">
-                <a href="#products" class="btn-primary-custom me-3"
-                  >Khám phá ngay</a
-                >
-                <a href="#about" class="btn btn-outline-dark">Tìm hiểu thêm</a>
-              </div>
+        <div class="hero-content-wrapper">
+          <div class="hero-text">
+            <h1>BOMBIT Plants</h1>
+            <h2>Mang thiên nhiên <span class="highlight">vào nhà</span> bạn</h2>
+            <p>
+              Chuyên cung cấp các loại cây cảnh cao cấp, giúp không gian sống
+              của bạn trở nên xanh mát và trong lành hơn. Chất lượng đảm bảo,
+              giao hàng tận nơi.
+            </p>
+            <div class="hero-buttons">
+              <a href="product-listing.html" class="btn-primary">
+                <i class="fas fa-shopping-bag"></i> Get Started
+              </a>
+              <a href="#about" class="btn-outline">
+                <i class="fas fa-info-circle"></i> Tìm hiểu thêm
+              </a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="hero-image text-center">
-              <img
-                src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
-                alt="Mỹ phẩm cao cấp"
-              />
-            </div>
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600"
+              alt="Cây cảnh cao cấp"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section section-padding">
+    <section id="features" class="section-padding">
       <div class="container">
         <div class="section-title">
-          <h2>Tại sao chọn chúng tôi?</h2>
-          <p>Cam kết mang đến những sản phẩm chất lượng cao nhất</p>
+          <h2>Tại Sao Chọn Chúng Tôi</h2>
+          <p>Những ưu điểm vượt trội khi mua cây cảnh tại BOMBIT Plants</p>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-certificate"></i>
-              </div>
-              <h3>Chứng nhận quốc tế</h3>
-              <p>
-                Sản phẩm được chứng nhận bởi các tổ chức uy tín như GMP, FDA và
-                CE
-              </p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-seedling"></i>
             </div>
+            <h3>Cây Khỏe Mạnh</h3>
+            <p>
+              Tất cả cây cảnh đều được chăm sóc kỹ lưỡng, đảm bảo sức khỏe tốt
+              nhất trước khi đến tay khách hàng.
+            </p>
           </div>
-          <div class="col-md-4">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-flask"></i>
-              </div>
-              <h3>Công nghệ tiên tiến</h3>
-              <p>
-                Ứng dụng công nghệ MSC-Exosome độc quyền từ viện EHL BIO Hàn
-                Quốc
-              </p>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
             </div>
+            <h3>Giao Hàng Nhanh</h3>
+            <p>
+              Dịch vụ giao hàng tận nơi nhanh chóng, đóng gói cẩn thận, bảo vệ
+              cây an toàn trong quá trình vận chuyển.
+            </p>
           </div>
-          <div class="col-md-4">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-leaf"></i>
-              </div>
-              <h3>Thiên nhiên an toàn</h3>
-              <p>100% thành phần từ thiên nhiên, không gây kích ứng da</p>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
             </div>
+            <h3>Hỗ Trợ 24/7</h3>
+            <p>
+              Đội ngũ chăm sóc khách hàng sẵn sàng tư vấn và hỗ trợ bạn mọi lúc,
+              mọi nơi về cách chăm sóc cây.
+            </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="section-padding">
-      <div class="container">
-        <div class="section-title">
-          <h2>Sản phẩm nổi bật</h2>
-          <p>Khám phá bộ sưu tập mỹ phẩm cao cấp của chúng tôi</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="product-card">
-              <div class="product-image">
-                <span class="product-badge">Mới</span>
-                <img
-                  src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400"
-                  alt="Serum"
-                />
-              </div>
-              <div class="product-info">
-                <span class="product-category">Serum</span>
-                <h3 class="product-title">Serum TBG Tái Tạo Da</h3>
-                <div class="product-price">2.890.000đ</div>
-                <div class="product-actions">
-                  <button class="btn-cart">
-                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
-                  </button>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-              </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-certificate"></i>
             </div>
+            <h3>Chất Lượng Đảm Bảo</h3>
+            <p>
+              Cam kết chất lượng 100%, đổi trả miễn phí nếu cây không đạt yêu
+              cầu hoặc bị lỗi từ nhà cung cấp.
+            </p>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-card">
-              <div class="product-image">
-                <span class="product-badge">Bán chạy</span>
-                <img
-                  src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400"
-                  alt="Kem dưỡng"
-                />
-              </div>
-              <div class="product-info">
-                <span class="product-category">Kem dưỡng</span>
-                <h3 class="product-title">Kem Dưỡng Exosome</h3>
-                <div class="product-price">1.990.000đ</div>
-                <div class="product-actions">
-                  <button class="btn-cart">
-                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
-                  </button>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-              </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-hand-holding-usd"></i>
             </div>
+            <h3>Giá Cả Hợp Lý</h3>
+            <p>
+              Giá cả cạnh tranh nhất thị trường, nhiều chương trình khuyến mãi
+              hấp dẫn quanh năm.
+            </p>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400"
-                  alt="Mặt nạ"
-                />
-              </div>
-              <div class="product-info">
-                <span class="product-category">Mặt nạ</span>
-                <h3 class="product-title">Mặt Nạ Tế Bào Gốc</h3>
-                <div class="product-price">1.490.000đ</div>
-                <div class="product-actions">
-                  <button class="btn-cart">
-                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
-                  </button>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-              </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-book"></i>
             </div>
+            <h3>Hướng Dẫn Chi Tiết</h3>
+            <p>
+              Cung cấp tài liệu hướng dẫn chăm sóc chi tiết, dễ hiểu cho từng
+              loại cây cảnh.
+            </p>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-card">
-              <div class="product-image">
-                <span class="product-badge">Giảm 20%</span>
-                <img
-                  src="https://images.unsplash.com/photo-1590439471364-192aa70c0b53?w=400"
-                  alt="Set chăm sóc"
-                />
-              </div>
-              <div class="product-info">
-                <span class="product-category">Bộ sản phẩm</span>
-                <h3 class="product-title">Set Trọn Bộ Chăm Sóc</h3>
-                <div class="product-price">4.990.000đ</div>
-                <div class="product-actions">
-                  <button class="btn-cart">
-                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
-                  </button>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-5">
-          <a href="#" class="btn-primary-custom">Xem tất cả sản phẩm</a>
         </div>
       </div>
     </section>
@@ -266,121 +167,191 @@
     <!-- About Section -->
     <section id="about" class="about-section section-padding">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="about-image">
+        <div class="about-content-wrapper">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=700"
+              alt="Về chúng tôi"
+            />
+          </div>
+          <div class="about-text">
+            <h2>Về BOMBIT Plants</h2>
+            <p>
+              BOMBIT Plants là cửa hàng chuyên cung cấp các loại cây cảnh chất
+              lượng cao, được tuyển chọn kỹ lưỡng từ các vườn ươm uy tín trong
+              và ngoài nước.
+            </p>
+            <p>
+              Với đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực trồng và
+              chăm sóc cây cảnh, chúng tôi cam kết mang đến cho khách hàng những
+              sản phẩm cây cảnh đẹp, khỏe mạnh và dịch vụ chăm sóc sau bán hàng
+              tận tình nhất.
+            </p>
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Năm kinh nghiệm</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Khách hàng</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Loại cây</span>
+              </div>
+            </div>
+            <a href="product-listing.html" class="btn-primary">
+              <i class="fas fa-arrow-right"></i> Xem sản phẩm
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sản Phẩm Nổi Bật</h2>
+          <p>Khám phá những loại cây cảnh được ưa chuộng nhất</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">Bán chạy</span>
               <img
-                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600"
-                alt="Về chúng tôi"
+                src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=400"
+                alt="Cây Kim Tiền"
               />
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-content">
-              <h2>Câu chuyện của chúng tôi</h2>
-              <p>
-                BOMBIT là đại diện độc quyền của viện nghiên cứu EHL BIO tại
-                Việt Nam, tiên phong trong việc ứng dụng công nghệ TBG (Tế Bào
-                Gốc) MSC-Exosome vào lĩnh vực chăm sóc sắc đẹp.
-              </p>
-              <p>
-                Với hơn 15 năm nghiên cứu và phát triển, chúng tôi tự hào mang
-                đến những sản phẩm có hiệu quả vượt trội, được chứng nhận bởi
-                các tổ chức y tế uy tín quốc tế.
-              </p>
-              <div class="stats-row">
-                <div class="stat-item">
-                  <span class="stat-number">15+</span>
-                  <span class="stat-label">Năm kinh nghiệm</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">50K+</span>
-                  <span class="stat-label">Khách hàng</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">100+</span>
-                  <span class="stat-label">Sản phẩm</span>
-                </div>
-              </div>
-              <a href="#" class="btn-primary-custom">Tìm hiểu thêm</a>
+            <div class="product-info">
+              <span class="product-category">Trong nhà</span>
+              <h3 class="product-title">Cây Kim Tiền</h3>
+              <div class="product-price">450.000đ</div>
+              <a href="product-listing.html" class="btn-add-to-cart">
+                <i class="fas fa-eye"></i> Xem chi tiết
+              </a>
             </div>
           </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-badge">Mới</span>
+              <img
+                src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+                alt="Sen Đá Mix"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Sen đá</span>
+              <h3 class="product-title">Sen Đá Mix</h3>
+              <div class="product-price">250.000đ</div>
+              <a href="product-listing.html" class="btn-add-to-cart">
+                <i class="fas fa-eye"></i> Xem chi tiết
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400"
+                alt="Cây Lưỡi Hổ"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Lọc không khí</span>
+              <h3 class="product-title">Cây Lưỡi Hổ</h3>
+              <div class="product-price">320.000đ</div>
+              <a href="product-listing.html" class="btn-add-to-cart">
+                <i class="fas fa-eye"></i> Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-40">
+          <a href="product-listing.html" class="btn-primary">
+            <i class="fas fa-store"></i> Xem tất cả sản phẩm
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section section-padding">
+    <section class="section-padding">
       <div class="container">
         <div class="section-title">
-          <h2>Khách hàng nói gì về chúng tôi</h2>
-          <p>Hàng nghìn phản hồi tích cực từ khách hàng trên toàn quốc</p>
+          <h2>Khách Hàng Nói Gì</h2>
+          <p>
+            Những đánh giá thực tế từ khách hàng đã mua sắm tại BOMBIT Plants
+          </p>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="testimonial-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonial-text">
-                "Sản phẩm thật sự tuyệt vời! Da tôi đã cải thiện rõ rệt chỉ sau
-                2 tuần sử dụng. Rất đáng để đầu tư cho làn da của mình."
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">L</div>
-                <div class="author-info">
-                  <h4>Linh Nguyen</h4>
-                  <p>TP. Hồ Chí Minh</p>
-                </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Cây đẹp, khỏe mạnh và được đóng gói rất cẩn thận. Dịch vụ giao
+              hàng nhanh chóng, nhân viên tư vấn nhiệt tình. Tôi rất hài lòng!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/1.jpg"
+                alt="Nguyễn Thị Lan"
+              />
+              <div>
+                <h4>Nguyễn Thị Lan</h4>
+                <span>Hà Nội</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="testimonial-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonial-text">
-                "Mình rất hài lòng với chất lượng sản phẩm. Không gây kích ứng,
-                thấm nhanh và hiệu quả thấy rõ. Sẽ tiếp tục ủng hộ!"
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">H</div>
-                <div class="author-info">
-                  <h4>Hương Trần</h4>
-                  <p>Hà Nội</p>
-                </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Lần đầu mua cây online nhưng không thất vọng. Cây về đúng như mô
+              tả, còn đẹp hơn hình ảnh. Giá cả hợp lý, sẽ ủng hộ lâu dài!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/2.jpg"
+                alt="Trần Văn Nam"
+              />
+              <div>
+                <h4>Trần Văn Nam</h4>
+                <span>TP. Hồ Chí Minh</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="testimonial-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonial-text">
-                "Đây là lần đầu tiên tôi tìm được sản phẩm phù hợp với làn da
-                nhạy cảm của mình. Cảm ơn BOMBIT đã mang đến sản phẩm tuyệt vời
-                này!"
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">M</div>
-                <div class="author-info">
-                  <h4>Mai Phương</h4>
-                  <p>Đà Nẵng</p>
-                </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Shop tư vấn rất chi tiết về cách chăm sóc từng loại cây. Sau khi
+              mua về cây vẫn được hỗ trợ nhiệt tình. Rất chuyên nghiệp!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/3.jpg"
+                alt="Phạm Thị Hoa"
+              />
+              <div>
+                <h4>Phạm Thị Hoa</h4>
+                <span>Đà Nẵng</span>
               </div>
             </div>
           </div>
@@ -388,103 +359,206 @@
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="newsletter-content">
-              <h2>Đăng ký nhận tin</h2>
-              <p>
-                Nhận thông tin về sản phẩm mới, khuyến mãi đặc biệt và các mẹo
-                chăm sóc da hữu ích
-              </p>
+        <div class="section-title">
+          <h2>Liên Hệ Với Chúng Tôi</h2>
+          <p>Để lại thông tin, chúng tôi sẽ liên hệ với bạn sớm nhất</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Địa chỉ</h4>
+                <p>123 Đường ABC, Quận 1, TP. Hồ Chí Minh</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Điện thoại</h4>
+                <p>+84 123 456 789</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>info@bombitplants.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Giờ làm việc</h4>
+                <p>Thứ 2 - Chủ nhật: 8:00 - 22:00</p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <form
-              class="newsletter-form"
-              onsubmit="handleNewsletterSubmit(event)"
-            >
-              <input
-                type="email"
-                placeholder="Nhập email của bạn..."
-                required
-              />
-              <button type="submit">Đăng ký</button>
-            </form>
-          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Họ và tên *" required />
+            <input type="email" placeholder="Email *" required />
+            <input type="tel" placeholder="Số điện thoại *" required />
+            <textarea
+              rows="5"
+              placeholder="Nội dung tin nhắn *"
+              required
+            ></textarea>
+            <button type="submit" class="btn-primary w-full">
+              <i class="fas fa-paper-plane"></i> Gửi tin nhắn
+            </button>
+          </form>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-widget">
-              <h4>BOMBIT</h4>
-              <p>
-                Đại diện độc quyền công nghệ MSC-Exosome từ viện EHL BIO Hàn
-                Quốc tại Việt Nam.
-              </p>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-              </div>
+        <div class="footer-content">
+          <div class="footer-col">
+            <h4>BOMBIT Plants</h4>
+            <p>
+              Chuyên cung cấp các loại cây cảnh cao cấp, mang thiên nhiên vào
+              ngôi nhà của bạn.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="footer-widget">
-              <h4>Liên kết</h4>
-              <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#products">Sản phẩm</a></li>
-                <li><a href="#about">Về chúng tôi</a></li>
-                <li><a href="#testimonials">Đánh giá</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-              </ul>
-            </div>
+          <div class="footer-col">
+            <h4>Liên kết</h4>
+            <ul>
+              <li>
+                <a href="#home"
+                  ><i class="fas fa-chevron-right"></i> Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="#about"
+                  ><i class="fas fa-chevron-right"></i> Về chúng tôi</a
+                >
+              </li>
+              <li>
+                <a href="product-listing.html"
+                  ><i class="fas fa-chevron-right"></i> Sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><i class="fas fa-chevron-right"></i> Liên hệ</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-widget">
-              <h4>Hỗ trợ</h4>
-              <ul>
-                <li><a href="#">Chính sách bảo hành</a></li>
-                <li><a href="#">Chính sách đổi trả</a></li>
-                <li><a href="#">Hướng dẫn mua hàng</a></li>
-                <li><a href="#">Câu hỏi thường gặp</a></li>
-                <li><a href="#">Điều khoản sử dụng</a></li>
-              </ul>
-            </div>
+          <div class="footer-col">
+            <h4>Danh mục</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Cây trong nhà</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Sen đá & Xương rồng</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Cây lọc không khí</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Phụ kiện</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-widget">
-              <h4>Liên hệ</h4>
-              <ul>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Q.1,
-                  TP.HCM
-                </li>
-                <li><i class="fas fa-phone"></i> 1900 xxxx</li>
-                <li><i class="fas fa-envelope"></i> info@bombit.vn</li>
-                <li><i class="fas fa-clock"></i> 8:00 - 22:00 (Hàng ngày)</li>
-              </ul>
-            </div>
+          <div class="footer-col">
+            <h4>Liên hệ</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Q1,
+                  TP.HCM</a
+                >
+              </li>
+              <li>
+                <a href="tel:+84123456789"
+                  ><i class="fas fa-phone"></i> +84 123 456 789</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@bombitplants.com"
+                  ><i class="fas fa-envelope"></i> info@bombitplants.com</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
         <div class="footer-bottom">
           <p>
-            &copy; 2024 BOMBIT. All rights reserved. Designed with
-            <i class="fas fa-heart" style="color: var(--primary-color)"></i>
+            &copy; 2025 BOMBIT Plants. All rights reserved. Designed with BoizJunior</i>
           </p>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="cart.js"></script>
+    <script>
+      // Scroll to top
+      const scrollTop = document.getElementById('scrollTop')
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          scrollTop.classList.add('show')
+        } else {
+          scrollTop.classList.remove('show')
+        }
+      })
+
+      scrollTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      })
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute('href'))
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+        })
+      })
+
+      // Contact form
+      document
+        .querySelector('.contact-form')
+        .addEventListener('submit', function (e) {
+          e.preventDefault()
+          alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.')
+          this.reset()
+        })
+    </script>
   </body>
 </html>

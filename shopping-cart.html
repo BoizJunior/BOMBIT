@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giỏ hàng - BOMBIT Plants</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-left">
+            <a href="index.html"> <i class="fas fa-home"></i> Trang chủ </a>
+          </div>
+          <div class="top-right">
+            <a href="shopping-cart.html" class="cart-link">
+              <i class="fas fa-shopping-cart"></i>
+              Giỏ hàng (<span id="cart-count">0</span>)
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-leaf"></i> BOMBIT Plants
+          </a>
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li>
+              <a class="nav-link" href="product-listing.html">Sản phẩm</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="shopping-cart.html">Giỏ hàng</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shopping Cart Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Giỏ Hàng Của Bạn</h2>
+          <p>Tổng số sản phẩm: <span id="total-items">0</span></p>
+        </div>
+
+        <div class="cart-layout">
+          <!-- Cart Items -->
+          <div class="cart-items-wrapper">
+            <div id="cart-items-container">
+              <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+
+            <div
+              id="empty-cart-message"
+              class="empty-cart"
+              style="display: none"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <h3>Giỏ hàng trống</h3>
+              <p>Hãy thêm sản phẩm vào giỏ hàng của bạn</p>
+              <a href="product-listing.html" class="btn-primary">
+                <i class="fas fa-arrow-left"></i> Tiếp tục mua sắm
+              </a>
+            </div>
+          </div>
+
+          <!-- Cart Summary -->
+          <div class="cart-summary-wrapper">
+            <div class="cart-summary">
+              <h3>Tóm Tắt Đơn Hàng</h3>
+              <div class="summary-item">
+                <span>Tổng số sản phẩm:</span>
+                <span id="total-items-summary" class="summary-value">0</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-item summary-total">
+                <span>Tổng cộng:</span>
+                <span id="total-price" class="summary-price">0đ</span>
+              </div>
+              <button class="btn-primary w-full" onclick="checkout()">
+                <i class="fas fa-credit-card"></i> Thanh toán
+              </button>
+              <a href="product-listing.html" class="btn-outline w-full">
+                <i class="fas fa-arrow-left"></i> Tiếp tục mua sắm
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h4>BOMBIT Plants</h4>
+            <p>
+              Chuyên cung cấp các loại cây cảnh cao cấp, mang thiên nhiên vào
+              ngôi nhà của bạn.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Liên kết</h4>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fas fa-chevron-right"></i> Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="product-listing.html"
+                  ><i class="fas fa-chevron-right"></i> Sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="shopping-cart.html"
+                  ><i class="fas fa-chevron-right"></i> Giỏ hàng</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Danh mục</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Cây trong nhà</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Sen đá & Xương rồng</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Cây lọc không khí</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Liên hệ</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Q1,
+                  TP.HCM</a
+                >
+              </li>
+              <li>
+                <a href="tel:+84123456789"
+                  ><i class="fas fa-phone"></i> +84 123 456 789</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@bombitplants.com"
+                  ><i class="fas fa-envelope"></i> info@bombitplants.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 BOMBIT Plants. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="cart.js"></script>
+    <script>
+      // Scroll to top
+      const scrollTop = document.getElementById('scrollTop')
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          scrollTop.classList.add('show')
+        } else {
+          scrollTop.classList.remove('show')
+        }
+      })
+
+      scrollTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      })
+    </script>
+  </body>
+</html>
