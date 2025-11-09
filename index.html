@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOMBIT - Mỹ Phẩm Cao Cấp</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span><i class="fas fa-phone"></i> Hotline: 1900 xxxx</span>
+            <span><i class="fas fa-envelope"></i> info@bombit.vn</span>
+          </div>
+          <div class="col-md-6 text-end">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">BOMBIT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Đánh giá</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Liên hệ</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <button class="btn btn-primary-custom">
+              <i class="fas fa-shopping-cart"></i> Giỏ hàng (0)
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1>
+                Khám phá vẻ đẹp <span class="highlight">tự nhiên</span> của bạn
+              </h1>
+              <p>
+                Công nghệ MSC-Exosome tiên tiến, dẫn đầu trong lĩnh vực chăm sóc
+                sắc đẹp và làm đẹp da tại châu Á.
+              </p>
+              <div class="hero-buttons">
+                <a href="#products" class="btn-primary-custom me-3"
+                  >Khám phá ngay</a
+                >
+                <a href="#about" class="btn btn-outline-dark">Tìm hiểu thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image text-center">
+              <img
+                src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+                alt="Mỹ phẩm cao cấp"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tại sao chọn chúng tôi?</h2>
+          <p>Cam kết mang đến những sản phẩm chất lượng cao nhất</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>Chứng nhận quốc tế</h3>
+              <p>
+                Sản phẩm được chứng nhận bởi các tổ chức uy tín như GMP, FDA và
+                CE
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h3>Công nghệ tiên tiến</h3>
+              <p>
+                Ứng dụng công nghệ MSC-Exosome độc quyền từ viện EHL BIO Hàn
+                Quốc
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3>Thiên nhiên an toàn</h3>
+              <p>100% thành phần từ thiên nhiên, không gây kích ứng da</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sản phẩm nổi bật</h2>
+          <p>Khám phá bộ sưu tập mỹ phẩm cao cấp của chúng tôi</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-badge">Mới</span>
+                <img
+                  src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400"
+                  alt="Serum"
+                />
+              </div>
+              <div class="product-info">
+                <span class="product-category">Serum</span>
+                <h3 class="product-title">Serum TBG Tái Tạo Da</h3>
+                <div class="product-price">2.890.000đ</div>
+                <div class="product-actions">
+                  <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                  </button>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-badge">Bán chạy</span>
+                <img
+                  src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400"
+                  alt="Kem dưỡng"
+                />
+              </div>
+              <div class="product-info">
+                <span class="product-category">Kem dưỡng</span>
+                <h3 class="product-title">Kem Dưỡng Exosome</h3>
+                <div class="product-price">1.990.000đ</div>
+                <div class="product-actions">
+                  <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                  </button>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400"
+                  alt="Mặt nạ"
+                />
+              </div>
+              <div class="product-info">
+                <span class="product-category">Mặt nạ</span>
+                <h3 class="product-title">Mặt Nạ Tế Bào Gốc</h3>
+                <div class="product-price">1.490.000đ</div>
+                <div class="product-actions">
+                  <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                  </button>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-badge">Giảm 20%</span>
+                <img
+                  src="https://images.unsplash.com/photo-1590439471364-192aa70c0b53?w=400"
+                  alt="Set chăm sóc"
+                />
+              </div>
+              <div class="product-info">
+                <span class="product-category">Bộ sản phẩm</span>
+                <h3 class="product-title">Set Trọn Bộ Chăm Sóc</h3>
+                <div class="product-price">4.990.000đ</div>
+                <div class="product-actions">
+                  <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                  </button>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="#" class="btn-primary-custom">Xem tất cả sản phẩm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600"
+                alt="Về chúng tôi"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <h2>Câu chuyện của chúng tôi</h2>
+              <p>
+                BOMBIT là đại diện độc quyền của viện nghiên cứu EHL BIO tại
+                Việt Nam, tiên phong trong việc ứng dụng công nghệ TBG (Tế Bào
+                Gốc) MSC-Exosome vào lĩnh vực chăm sóc sắc đẹp.
+              </p>
+              <p>
+                Với hơn 15 năm nghiên cứu và phát triển, chúng tôi tự hào mang
+                đến những sản phẩm có hiệu quả vượt trội, được chứng nhận bởi
+                các tổ chức y tế uy tín quốc tế.
+              </p>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <span class="stat-number">15+</span>
+                  <span class="stat-label">Năm kinh nghiệm</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50K+</span>
+                  <span class="stat-label">Khách hàng</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">100+</span>
+                  <span class="stat-label">Sản phẩm</span>
+                </div>
+              </div>
+              <a href="#" class="btn-primary-custom">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Khách hàng nói gì về chúng tôi</h2>
+          <p>Hàng nghìn phản hồi tích cực từ khách hàng trên toàn quốc</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Sản phẩm thật sự tuyệt vời! Da tôi đã cải thiện rõ rệt chỉ sau
+                2 tuần sử dụng. Rất đáng để đầu tư cho làn da của mình."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">L</div>
+                <div class="author-info">
+                  <h4>Linh Nguyen</h4>
+                  <p>TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Mình rất hài lòng với chất lượng sản phẩm. Không gây kích ứng,
+                thấm nhanh và hiệu quả thấy rõ. Sẽ tiếp tục ủng hộ!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">H</div>
+                <div class="author-info">
+                  <h4>Hương Trần</h4>
+                  <p>Hà Nội</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Đây là lần đầu tiên tôi tìm được sản phẩm phù hợp với làn da
+                nhạy cảm của mình. Cảm ơn BOMBIT đã mang đến sản phẩm tuyệt vời
+                này!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">M</div>
+                <div class="author-info">
+                  <h4>Mai Phương</h4>
+                  <p>Đà Nẵng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="newsletter-content">
+              <h2>Đăng ký nhận tin</h2>
+              <p>
+                Nhận thông tin về sản phẩm mới, khuyến mãi đặc biệt và các mẹo
+                chăm sóc da hữu ích
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form
+              class="newsletter-form"
+              onsubmit="handleNewsletterSubmit(event)"
+            >
+              <input
+                type="email"
+                placeholder="Nhập email của bạn..."
+                required
+              />
+              <button type="submit">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>BOMBIT</h4>
+              <p>
+                Đại diện độc quyền công nghệ MSC-Exosome từ viện EHL BIO Hàn
+                Quốc tại Việt Nam.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h4>Liên kết</h4>
+              <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#about">Về chúng tôi</a></li>
+                <li><a href="#testimonials">Đánh giá</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4>Hỗ trợ</h4>
+              <ul>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4>Liên hệ</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Q.1,
+                  TP.HCM
+                </li>
+                <li><i class="fas fa-phone"></i> 1900 xxxx</li>
+                <li><i class="fas fa-envelope"></i> info@bombit.vn</li>
+                <li><i class="fas fa-clock"></i> 8:00 - 22:00 (Hàng ngày)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 BOMBIT. All rights reserved. Designed with
+            <i class="fas fa-heart" style="color: var(--primary-color)"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
